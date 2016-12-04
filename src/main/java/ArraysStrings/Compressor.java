@@ -21,7 +21,9 @@ public class Compressor implements Function<String, String> {
             }
         }
         print(sb, lastChar, lastCharCount);
-        return sb.toString();
+        if (sb.length() < s.length())
+            return sb.toString();
+        return s;
     }
 
     private void print(StringBuilder sb, char lastChar, int lastCharCount) {

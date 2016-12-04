@@ -24,8 +24,10 @@ public class CompressorTest {
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {"", ""},
-                {"a1", "a"},
-                {"a2b1c3", "aabccc"},
+                {"a", "a"},
+                {"aa", "aa"},
+                {"a3", "aaa"},
+                {"a3b2", "aaabb"},
         });
     }
 
