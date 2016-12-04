@@ -5,6 +5,9 @@ import com.sun.istack.internal.NotNull;
 import java.util.BitSet;
 import java.util.function.Function;
 
+/**
+ * CtCI 1.1
+ */
 public class IsUniqueChars implements Function<String, Boolean> {
     @Override
     public Boolean apply(@NotNull String s) {

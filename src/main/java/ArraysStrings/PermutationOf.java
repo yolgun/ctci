@@ -3,6 +3,9 @@ package ArraysStrings;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+/**
+ * CtCI 1.2
+ */
 public class PermutationOf implements BiFunction<String, String, Boolean>{
     @Override
     public Boolean apply(String s, String s2) {

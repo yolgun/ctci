@@ -2,6 +2,9 @@ package ArraysStrings;
 
 import java.util.function.Function;
 
+/**
+ * CtCI 1.3
+ */
 public class StringReverser implements Function<String, String>{
 
     @Override
