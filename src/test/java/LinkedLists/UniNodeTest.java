@@ -1,6 +1,7 @@
 package LinkedLists;
 
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.*;
 
@@ -55,5 +56,15 @@ public class UniNodeTest {
         sut.removeNext();
         assertEquals(Integer.valueOf(0), sut.data);
         assertEquals(Integer.valueOf(2), sut.next.data);
+    }
+
+    @Test
+    public void equalsShouldBeCorrect() throws Exception {
+        UniNode<Integer> aList = UniNode.of(0, 1, 2);
+        UniNode<Integer> sameList = UniNode.of(0,1,2);
+        UniNode<Integer> differentList = UniNode.of(0,1);
+
+        assertTrue(aList.equals(sameList));
+        assertFalse(aList.equals(differentList));
     }
 }
